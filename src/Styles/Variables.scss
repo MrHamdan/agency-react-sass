@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+// Fonts
+$Montserrat: 'Montserrat', sans-serif;
+
+
+// Colors
+$PrimaryColor: #5454D4;
+$whiteColor: white;
+$blackColor: black;
+
+@mixin buttonStyle {
+    color: $whiteColor;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:1px solid $whiteColor;
+    background: transparent;
+}
