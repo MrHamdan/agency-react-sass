@@ -1,18 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
-// Fonts
 $Montserrat: 'Montserrat', sans-serif;
 
-
 // Colors
-$PrimaryColor: #5454D4;
-$whiteColor: white;
-$blackColor: black;
+$body-color: #19191b;
+$main-color: #5454d4;
+$primary-color: #fff;
+$secondary-color: rgba(255, 255, 255, 0.7);
 
-@mixin buttonStyle {
-    color: $whiteColor;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border:1px solid $whiteColor;
-    background: transparent;
+
+@mixin buttonStyle{
+    padding: 10px 30px;
+    color: $primary-color;
+    background: $main-color;
+    border: 0.66369px solid $secondary-color;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover {
+        border-color: $main-color;
+        transition: ease all 1s;
+    }
+}
+
+
+
+@mixin rectangle{
+    
+}
+
+
+@mixin mT($size) {
+  margin-top: $size;
+}
+// Responsive
+
+@mixin sm {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: 768px) and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
 }

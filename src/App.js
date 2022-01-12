@@ -1,10 +1,29 @@
+import { useEffect, useState } from 'react';
+import Dropdown from './Components/Dropdown';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
-import './Styles/App.scss'
+import './Styles/Common.scss'
 function App() {
+  const [isOpen, setIsOpen]= useState(false);
+
+    const toggle=()=>{
+      setIsOpen(!isOpen);
+    }
+    useEffect(()=>{
+      const hideMenu=()=>{
+          if(window.innerWidth && isOpen){
+              setIsOpen(false)
+          }
+      }
+      window.addEventListener('resize',hideMenu)
+      return ()=>{
+          window.removeEventListener('resize',hideMenu)
+      }
+  },[isOpen])
   return (
     <div>
-      <Navbar/>
+      <Navbar toggle={toggle} />
+      <Dropdown isOpen={isOpen}/>
       <Hero/>
     </div>
   );
