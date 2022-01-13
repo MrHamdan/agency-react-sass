@@ -3,6 +3,7 @@ import Choice from './Components/Choice';
 import Dropdown from './Components/Dropdown';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
+import Services from './Components/Services';
 import './Styles/Common.scss'
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +28,7 @@ function App() {
       <Dropdown isOpen={isOpen} />
       <Hero />
       <Choice/>
+      <Services/>
     </div>
   );
 }

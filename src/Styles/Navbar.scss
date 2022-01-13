@@ -34,6 +34,7 @@
   }
   button{
     @include button(0.66369px solid #FFFFFF,  3.31845px, none, 135px);
+    font-family: $Montserrat;
     &:hover{
         background-color: $main-color;
     }

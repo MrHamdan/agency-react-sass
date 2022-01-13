@@ -60,6 +60,21 @@
               top:90px;
             }
           }
+          .zigzag{
+              @include zigzag;
+          }
+          .circle{
+              @include circle;
+          }
+          .triangleOne{
+                @include triangleOne;
+          }
+          .triangleTwo{
+              @include triangleTwo;
+          }
+          .plus{
+                @include plus;
+          }
         
     }
     
@@ -70,6 +85,7 @@
         background-color:$main-color;
         margin-top:60px;
         border:0px;
+        font-family: $Montserrat;
     }
 
     .arrow{

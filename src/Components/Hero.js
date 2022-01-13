@@ -16,6 +16,11 @@ const Hero = () => {
                <button>Our Services <AiOutlineArrowRight className="arrow"></AiOutlineArrowRight> </button>
                </div>
                <div className="hero-image">
+                   <span className="zigzag"></span>
+                   <span className="circle"></span>
+                   <span className="triangleOne"></span>                  
+                   <span className="triangleTwo"></span>                  
+                   <span className="plus"></span>                  
                    <img src={men} alt="" />
                </div>
             </div>
