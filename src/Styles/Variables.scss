@@ -9,18 +9,27 @@ $primary-color: #fff;
 $secondary-color: rgba(255, 255, 255, 0.7);
 
 
-@mixin buttonStyle{
-    padding: 10px 30px;
-    color: $primary-color;
-    background: $main-color;
-    border: 0.66369px solid $secondary-color;
-    border-radius: 3px;
-    cursor: pointer;
-    &:hover {
-        border-color: $main-color;
-        transition: ease all 1s;
-    }
+
+// Button Styles
+@mixin button($border, $border_radius, $background_color, $width){
+  width: $width;
+  border: $border;
+  border-radius: $border_radius;
+  background-color: transparent;
+  text-decoration: none;
+  text-align: center;
+  color: $primary-color;
+  padding: 10px 20px; 
 }
+
+
+// Title Styles
+@mixin title($font_size, $font_weight, $color){
+  font-size: $font_size;
+  font-weight: $font_weight;
+  color: $color;
+}
+
 
 
 
@@ -32,6 +41,11 @@ $secondary-color: rgba(255, 255, 255, 0.7);
 @mixin mT($size) {
   margin-top: $size;
 }
+
+
+
+
+
 // Responsive
 
 @mixin sm {

@@ -1,5 +1,5 @@
 @import './Variables.scss';
-
+@import './Common.scss';
 
 .hero-section{
     margin-top:61px;
@@ -15,6 +15,7 @@
 
     }
     p{
+        font-family:$Montserrat;
         color:$primary-color;
         font-size:20px;
         font-weight:400px;
@@ -26,13 +27,24 @@
         img{
             clip-path: polygon(71% -6%, 76% 3%, 98% -8%, 102% 55%, 82% 88%, 74% 101%, 32% 87%, 12% 80%, -3% 54%, 20% 9%);
         }
+        &::before {
+            content: "";
+            position: absolute;
+          }
     }
+    
 
     
     button{
-        @include buttonStyle;
+        @include button(0.66369px solid #FFFFFF,  3.31845px, none, 145px);
+        background-color:$main-color;
         margin-top:60px;
         border:0px;
+    }
+
+    .arrow{
+        transform: rotate(-35deg);
+        margin-bottom:-2px;
     }
 
 }
@@ -50,7 +62,6 @@
         font-size:15px;
     }
     img{
-        width:100%;
         justify-content: center;
     }
 }

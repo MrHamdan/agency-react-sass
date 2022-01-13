@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Styles/Hero.scss';
 import men from '../Images/men.png'
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 
 const Hero = () => {
@@ -12,7 +13,7 @@ const Hero = () => {
                Build Your <br /> Awesome <br /> Platform
                </span>
                <p>Enver studio is a digital studio that offers several services <br /> such as UI/UX Design to developers, we will provide the best <br /> service for those of you who use our services.</p>
-               <button>Our Services</button>
+               <button>Our Services <AiOutlineArrowRight className="arrow"></AiOutlineArrowRight> </button>
                </div>
                <div className="hero-image">
                    <img src={men} alt="" />

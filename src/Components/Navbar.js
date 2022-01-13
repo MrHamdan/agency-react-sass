@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineMenuFold } from "react-icons/ai";
+import { BiMenuAltRight } from "react-icons/bi";
 import '../Styles/Navbar.scss';
 const Navbar = ({toggle}) => {
     return (
@@ -11,7 +11,7 @@ const Navbar = ({toggle}) => {
                 <li><a href="#">Our Projects</a></li>
                 <li><a href="#">About us</a></li>
             </ul>
-            <AiOutlineMenuFold onClick={toggle} className='navbar-icon'/>
+            <BiMenuAltRight onClick={toggle} className='navbar-icon'/>
             <button>Contact us</button>
         </div>
     );
