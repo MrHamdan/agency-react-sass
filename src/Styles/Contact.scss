@@ -1,0 +1,29 @@
+@import './Variables.scss';
+@import './Common.scss';
+
+.bg-color{
+    background: rgba(30, 30, 32, 0.5);
+    margin-top:100px;
+    padding: 150px 0;
+}
+
+.contact-section{
+    @include sm{
+        flex-direction: column;
+        justify-content: center;
+    }
+    margin-top: 150px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        @include title(40px, $primary-color, 400);
+        font-family: $Montserrat;
+          font-weight: bold;
+    }
+    button{
+        @include button(0px solid #FFFFFF,  3.31845px, none, 145px);
+        background-color:$main-color;
+        font-family: $Montserrat;
+    }
+}

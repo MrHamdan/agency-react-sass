@@ -50,7 +50,7 @@ const Services = () => {
             </div>
             <div className='services'>
                 {
-                    services.map(service => <div className='services-content'>
+                    services.map(service => <div className='services-content' key={service.id}>
                         <i className={service.icon}></i>
                         <h4 className='services-title'>{service.title}</h4>
                         <p className='paragraph'>{service.details}</p>

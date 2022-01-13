@@ -1,0 +1,33 @@
+@import './Variables.scss';
+@import './Common.scss';
+
+
+.portfolio-section{
+    margin-top: 110px;
+    span{
+        @include title(40px, $primary-color, 400);
+        font-family: $Montserrat;
+          font-weight: bold;
+    }
+    .portfolio-images{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 80px;
+    img:nth-child(1){
+        width: 100%;
+        border-radius: 10px;
+    }
+    img:nth-child(2){
+        width: 100%;
+        margin-top: 50px;
+        border-radius: 10px;
+    }
+    img:nth-child(3){
+        width: 100%;
+        margin-top:100px;
+        border-radius: 10px;
+    }
+    
+    }
+    
+}
