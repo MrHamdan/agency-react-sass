@@ -4,13 +4,14 @@
 
 .footer-section{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    
     @include sm{
         flex-direction: column;
 
     }
     a{
+
         @include sm{
             display: block;
             text-align: center;
@@ -29,10 +30,14 @@
         }
     }
     span{
+        
         color: $primary-color;
         font-family: $Montserrat;
         font-weight: bold;
         text-decoration: none;
-        margin-right: 30px;
+        @include sm{
+            display:flex;
+            justify-content: center;
+        }
     }
 }

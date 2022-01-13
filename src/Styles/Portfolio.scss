@@ -5,12 +5,18 @@
 .portfolio-section{
     margin-top: 180px;
     position: relative;
+    @include sm{
+        margin-bottom: 150px;
+    }
     span{
         @include title(40px, $primary-color, 400);
         font-family: $Montserrat;
           font-weight: bold;
           @include sm{
                 font-size: 25px;
+          }
+          @include md{
+            font-size: 35px;
           }
     }
 
@@ -76,9 +82,9 @@
             margin-top:130px;
         }
         @include md{
-            margin-top:100px;
-            display: flex;
-            flex-direction: column;
+            display: grid;
+        grid-gap: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
         
     img:nth-child(1){

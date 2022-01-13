@@ -67,6 +67,10 @@
           }
           .circle{
               @include circle;
+              @include md{
+                left:320px;
+                
+              }
           }
           .triangleOne{
                 @include triangleOne;
