@@ -33,6 +33,38 @@
           left:290px;
           top:40px;
         }
+        @include md{
+            left:600px;
+            top:30px;
+        }
+    }
+
+    .zigzag{
+        @include zigzag;
+        left:0px;
+        top:600px;
+        @include sm{
+          left:30px;
+          top:1200px;
+        }
+        @include md{
+            left:0px;
+            top:2200px;
+        }
+    }
+
+    .dot{
+        @include dot;
+        left:570px;
+        top:610px;
+        @include sm{
+          left:170px;
+          top:1200px;
+        }
+        @include md{
+            left:355px;
+            top:2200px;
+        }
     }
 
     .portfolio-images{
@@ -43,9 +75,18 @@
         @include sm{
             margin-top:130px;
         }
+        @include md{
+            margin-top:100px;
+            display: flex;
+            flex-direction: column;
+        }
+        
     img:nth-child(1){
         @include sm{
             padding: 0px;
+        }
+        @include md{
+            
         }
         width: 100%;
         border-radius: 10px;

@@ -21,6 +21,8 @@ const Portfolio = () => {
                 <img  className="imageTwo" src={portfolioTwo} alt="" />
                 <img  className="imageThree" src={portfolioThree} alt="" />
             </div>
+            <span className="zigzag"></span>
+            <span className="dot"></span>
             </div>
         </div>
     );

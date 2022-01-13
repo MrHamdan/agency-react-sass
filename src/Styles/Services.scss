@@ -12,6 +12,10 @@
       left:0px;
       top:-10px;
     }
+    @include md{
+      left:30px;
+      top:-10px;
+    }
     
   }
   .triangleTwo{
@@ -22,6 +26,10 @@
       left:10px;
       top:0px;
     }
+    @include md{
+      left:40px;
+      top:10px;
+    }
   }
 
   .plus{
@@ -29,8 +37,14 @@
     left:1100px;
     top:100px;
     transform: rotate(58deg);
+    
     @include sm{
       top:50px;
+    }
+    @include md{
+      left:700px;
+      top:100px;
+      transform: rotate(58deg);
     }
   }
   margin: 100px 0px;

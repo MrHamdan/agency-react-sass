@@ -123,23 +123,9 @@ top: 20px;
   }
 }
 
-// Triangle Style
-@mixin triangle{
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 50px solid $primary-color;
-  left: -50px;
-  top: -50px;
-  @include sm{
-    left: -40px;
-    top: -40px;
-  }
-}
 
+
+// Triangle Styles
 @mixin triangleOne{
 position:absolute;
 width:27px;
@@ -176,6 +162,7 @@ transform: rotate(30deg);
 
 }
 
+// Triangle Styles
 @mixin triangleTwo{
   position: absolute;
   width: 27px;
@@ -212,7 +199,7 @@ transform: rotate(30deg);
   }
   }
 
-
+// Plus Styles
 @mixin plus{
 background: rgb(255, 255, 255);
 height: 38px;
@@ -233,6 +220,39 @@ position: absolute;
 top: 16px;
 width: 39px;
 border-radius: 2px;
+}
+}
+
+
+// Dot Styles
+@mixin dot{
+background: #5454D4;
+height: 0px;
+width: 13px;
+padding:  4px;
+position: absolute;
+left: 51%;
+border-radius:  10px;
+top: 660px;
+&::before {
+content: "";
+height: 5px;
+width: 5px;
+background: #121213;
+position: absolute;
+right: -20px;
+top: 2px;
+border-radius: 5px;
+}
+&::after {
+content: "";
+height: 5px;
+width: 5px;
+background: #121213;
+position: absolute;
+right: -11px;
+top: 2px;;
+border-radius: 5px;
 }
 }
 

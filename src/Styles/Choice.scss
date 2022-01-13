@@ -8,6 +8,11 @@
     div{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        @include md{
+            display: grid;
+            align-items: center;
+        }
         span{
             @include title(40px, $primary-color, 400);
             font-family: $Montserrat;
@@ -15,6 +20,9 @@
             @include sm{
                 font-size: 25px;
                 margin-bottom:20px;
+            }
+            @include md{
+                font-size: 25px;
             }
         }
         p{
