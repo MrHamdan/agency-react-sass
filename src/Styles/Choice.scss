@@ -29,7 +29,7 @@
     }
     .playIcon {
         @include lg{
-            position: absolute;
+        position: absolute;
         color:#fff;
         font-size:40px;
         background:#5454D4;
@@ -40,7 +40,7 @@
         cursor:pointer;
         }
         @include sm{
-            position: absolute;
+        position: absolute;
         color:#fff;
         font-size:40px;
         background:#5454D4;
@@ -51,14 +51,14 @@
         cursor:pointer;
         }
         @include md{
-            position: absolute;
+        position: absolute;
         color:#fff;
         font-size:40px;
         background:#5454D4;
         border-radius:50%;
         padding:20px;
-        left:40%;
-        top:65%;
+        left:47%;
+        top:58%;
         cursor:pointer;
         }
     }
