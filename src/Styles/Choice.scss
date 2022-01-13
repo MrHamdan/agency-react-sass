@@ -12,6 +12,10 @@
             @include title(40px, $primary-color, 400);
             font-family: $Montserrat;
             font-weight: bold;
+            @include sm{
+                font-size: 25px;
+                margin-bottom:20px;
+            }
         }
         p{
             @include title(18px, $primary-color, 400);

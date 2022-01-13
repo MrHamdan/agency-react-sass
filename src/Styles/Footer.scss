@@ -6,7 +6,19 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @include sm{
+        flex-direction: column;
+
+    }
     a{
+        @include sm{
+            display: block;
+            text-align: center;
+            flex-direction: column;
+            margin-bottom:20px;
+    
+        }
+        
         color: $primary-color;
         font-family: $Montserrat;
         font-weight: bold;

@@ -12,7 +12,9 @@
         font-size:53px;
         font-weight: bold;
         font-family:$Montserrat;
-
+        @include sm{
+            font-size:40px;
+        }
     }
     p{
         font-family:$Montserrat;

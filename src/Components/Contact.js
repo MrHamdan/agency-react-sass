@@ -9,7 +9,7 @@ const Contact = () => {
                 </div>
                 <div>
                 <button>Contact Us</button> 
-            </div>
+                </div>
             </div>
         </div>
     );

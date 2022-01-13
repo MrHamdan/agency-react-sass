@@ -11,6 +11,8 @@ const Portfolio = () => {
     return (
         <div className="container">
             <div className="portfolio-section">
+            <span className="plus"></span> 
+            <span className="circle"></span>
             <div>
             <span>Our Awesome Portfolio</span>
             </div>

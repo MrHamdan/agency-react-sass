@@ -8,9 +8,9 @@
 }
 
 .contact-section{
+    text-align: left;
     @include sm{
         flex-direction: column;
-        justify-content: center;
     }
     margin-top: 150px;
     display:flex;
@@ -20,10 +20,16 @@
         @include title(40px, $primary-color, 400);
         font-family: $Montserrat;
           font-weight: bold;
+          @include sm{
+                font-size: 25px;
+          }
     }
     button{
         @include button(0px solid #FFFFFF,  3.31845px, none, 145px);
         background-color:$main-color;
         font-family: $Montserrat;
+        @include sm{
+            margin-top:30px;
+        }
     }
 }

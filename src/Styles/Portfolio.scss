@@ -3,32 +3,89 @@
 
 
 .portfolio-section{
-    margin-top: 110px;
+    margin-top: 180px;
+    position: relative;
     span{
         @include title(40px, $primary-color, 400);
         font-family: $Montserrat;
           font-weight: bold;
+          @include sm{
+                font-size: 25px;
+          }
     }
+
+    .plus{
+        @include plus;
+        left:0px;
+        top:-100px;
+        transform: rotate(30deg);
+        @include sm{
+          left: 30px;
+        }
+    }
+
+
+    .circle{
+        @include circle;
+        left:1050px;
+        top:30px;
+        @include sm{
+          left:290px;
+          top:40px;
+        }
+    }
+
     .portfolio-images{
         display: grid;
-        grid-gap: 30px;
+        grid-gap: 40px;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-top: 80px;
+        margin-top: 80px;
+        @include sm{
+            margin-top:130px;
+        }
     img:nth-child(1){
+        @include sm{
+            padding: 0px;
+        }
         width: 100%;
         border-radius: 10px;
-        background-color: grid-gap: 30px;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+        background-color: #1E1E20;
+        padding: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px #5454D4;
+        }
     }
     img:nth-child(2){
+        @include sm{
+            padding: 0px;
+            margin-top: 20px;
+        }
         width: 100%;
         margin-top: 50px;
         border-radius: 10px;
+        background-color: #1E1E20;
+        padding: 10px;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px #5454D4;
+        }
     }
     img:nth-child(3){
+        @include sm{
+            padding: 0px;
+            margin-top:20px;
+        }
         width: 100%;
         margin-top:100px;
         border-radius: 10px;
+        background-color: #1E1E20;
+        padding: 10px;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px #5454D4;
+        }
     }
     
     }

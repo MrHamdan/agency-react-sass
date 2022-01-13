@@ -3,11 +3,44 @@
 
 .service-moto {
   text-align: center;
+  position:relative;
+  .triangleOne{
+    @include triangleOne;
+    left:150px;
+    top: 0px;
+    @include sm{
+      left:0px;
+      top:-10px;
+    }
+    
+  }
+  .triangleTwo{
+    @include triangleTwo;
+    left: 160px;
+    top: 20px;
+    @include sm{
+      left:10px;
+      top:0px;
+    }
+  }
+
+  .plus{
+    @include plus;
+    left:1100px;
+    top:100px;
+    transform: rotate(58deg);
+    @include sm{
+      top:50px;
+    }
+  }
   margin: 100px 0px;
   span{
       @include title(40px, $primary-color, 400);
       font-family: $Montserrat;
         font-weight: bold;
+        @include sm{
+            font-size: 20px;
+        }
   }
 }
 

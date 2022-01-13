@@ -46,6 +46,9 @@ const Services = () => {
     return (
         <div className='container'>
             <div className='service-moto'>
+            <span className="triangleOne"></span>
+            <span className="plus"></span>                   
+                   <span className="triangleTwo"></span>  
                 <span>The Service We Provide <br /> For You</span>
             </div>
             <div className='services'>
