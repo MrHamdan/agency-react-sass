@@ -1,0 +1,26 @@
+@import './Variables.scss';
+@import './Common.scss';
+
+
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a{
+        color: $primary-color;
+        font-family: $Montserrat;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0px 30px;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    span{
+        color: $primary-color;
+        font-family: $Montserrat;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 30px;
+    }
+}

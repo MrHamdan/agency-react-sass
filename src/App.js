@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Choice from './Components/Choice';
 import Contact from './Components/Contact';
 import Dropdown from './Components/Dropdown';
+import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
 import Portfolio from './Components/Portfolio';
@@ -35,6 +36,7 @@ function App() {
       <Services/>
       <Portfolio/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
